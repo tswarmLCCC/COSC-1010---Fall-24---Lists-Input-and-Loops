@@ -1,0 +1,52 @@
+'''
+for loops: Used for iterating over a fixed sequence of items.
+When to Use:
+When the number of iterations is predetermined (e.g., iterating over a list, range, or other iterable).
+When you know the exact number of times you want to execute the loop.
+OR - you want to run forever!  (Games use this!)
+'''
+
+#an example
+animals = ['cow', 'chicken', 'cat', 'dog']
+for animal in animals:
+    print(animal)
+
+'''
+While Loop: Repeatedly executes a block of statements while a condition remains true.
+When to Use:
+    When the number of iterations is not predetermined.
+    When you need to repeat a task until a specific condition becomes false.
+    When you want more flexibility in initialization within the loop body.
+    Sentinel Values can be useful for code clarity
+'''
+
+items = ['pen', 'notebook', 'pencil', 'lunch box']
+index = 0
+items_len = len(items)
+continueLoop = True
+
+while continueLoop == True:
+    print(items[index])
+    
+    if items[index] == 'pencil':
+        print ("Found it!")
+        continueLoop = False
+
+    #there's a problem here!  Let's use the debugger to figure out some things!
+    index += 1  #what happens if we move this?
+    if index > items_len:
+        continueLoop = False
+
+#Sentinel Values
+items = ['pen', 'notebook', 'pencil', 'lunch box']
+index = 0
+items_len = len(items)
+
+while (index < items_len):
+
+    print(items[index])
+    #there's a problem here!  Let's use the debugger to figure out some things!
+    if items[index] == 'pencil':
+        print ("Found it!")
+        break
+    index += 1
