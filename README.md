@@ -18,6 +18,8 @@ Write a program that:
 - Depending on the option chosen asks the user to input relevant start/end points.
 - Outputs the relevant items from the list.
 
+Ensure the file you are turning in is called Make.py. The unit tests depend on this.
+
 ### Extra challenge 
 - code the three different outputs as separate subroutines and call them when needed.
 
